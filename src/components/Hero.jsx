@@ -19,10 +19,7 @@ const Hero = () => {
           className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Rohan</span>
           </h1>
-          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
-          </p> */}
+          <p>
           <TypeAnimation  className={`${styles.heroSubText} text-white`}
           sequence={[
            // Same substring at the start will only be typed out once, initially
@@ -40,9 +37,9 @@ const Hero = () => {
         //  style={{ fontSize: '2em', display: 'inline-block'}}
          repeat={Infinity}
        />
-
-        </div>
+       </p>
       </div>
+    </div>
 
       <ComputersCanvas />
 
