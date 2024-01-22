@@ -9,13 +9,12 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Footer from "./Footer";
-import SocialLinks from './SocialLinks';
+
 
 
 export {
   Hero,
   Navbar,
-  SocialLinks,
   About,
   Tech,
   Experience,
