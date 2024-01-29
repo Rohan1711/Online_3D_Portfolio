@@ -1,51 +1,84 @@
+import React from "react";
 import { motion } from "framer-motion";
+import {moon} from "../assets";
+import { fadeIn} from "../varient";
 import { TypeAnimation } from 'react-type-animation';
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
-
-        <div>
-          <h1
+    <div
+      name="Hero"
+      className="relative h-screen w-full mx-auto">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+        <div className="flex flex-col justify-center h-full">
+          <motion.h2
+          variants={fadeIn("up",0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{once:false, amount:0.7}}
           className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Rohan</span>
-          </h1>
-          {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
-          </p> */}
-          <TypeAnimation  className={`${styles.heroSubText} text-white`}
-          sequence={[
-           // Same substring at the start will only be typed out once, initially
-           `And I'm a Web developer`,
-           1000, // wait 1s before replacing "Mice" with "Hamsters"
-           `And I'm a React developer`,
-           1000,
-           `And I'm a Backend developer`,
-           1000,
-          `And I'm a Blockchain developer`,
-           1000
-         ]}
-         wrapper="span"
-         speed={50}
-        //  style={{ fontSize: '2em', display: 'inline-block'}}
-         repeat={Infinity}
-       />
-
+          </motion.h2>
+          <motion.div
+             variants={fadeIn("up",0.6)}
+             initial="hidden"
+             whileInView={"show"}
+             viewport={{once:false, amount:0.7}}
+             className={`${styles.heroSubText} text-white`}>
+            <span className="mr-4">And I'm a</span>
+            <TypeAnimation
+            sequence={[
+              "Web Developer",
+              2000,
+              "FullStack Developer",
+              2000,
+              "Blockchain Developer",
+              2000,
+            ]}
+              speed={50}
+              className={`${styles.heroSubText} text-violet-400`}
+              wrapper="span"
+              repeat={Infinity}
+            />
+            </motion.div>
+            <motion.div
+               variants={fadeIn("up", 0.7)}
+               initial="hidden"
+               whileInView={"show"}
+               viewport={{ once: false, amount: 0.7 }}
+               className="flex items-center gap-x-5 max-w-max lg:mx-0 mt-5 mx-auto">
+               <a href="https://github.com/Rohan1711" target="_blank">
+                 <FaGithub className="text-5xl hover:bg-gray-500 bg-tertiary p-3 rounded-full shadow" />
+               </a>
+               <a href="https://www.linkedin.com/in/rohan-kakare-478729184" target="_blank">
+                 <FaLinkedin className="text-5xl hover:bg-blue-700 bg-tertiary p-3 rounded-full shadow" />
+               </a>
+               <a href="mailto:rohankakare@gmail.com" target="_blank">
+                 <HiOutlineMail className="text-5xl hover:bg-sky-700 bg-tertiary p-3 rounded-full shadow" />
+               </a>
+               <a href="/Rohan Resume.pdf" target="_blank">
+                 <BsFillPersonLinesFill className="text-5xl hover:bg-violet-500 bg-tertiary p-3 rounded-full shadow" />
+               </a>
+        </motion.div>
         </div>
+        <motion.div
+                variants={fadeIn("down",0.6)}
+                initial="hidden"
+                whileInView={"show"}
+                className="flex-1 max=w-[320px] lg:max-w-[440px]"
+        >
+          <img
+            src={moon}
+            alt="my profile"
+            className="rounded-2xl mx-auto w-2/3 md:max-w-lg"
+          />
+        </motion.div>
       </div>
-
-      <ComputersCanvas />
-
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
@@ -63,8 +96,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
-    </section>
+    </div>
   );
 };
-
 export default Hero;

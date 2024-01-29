@@ -33,6 +33,8 @@ import tripguide from "./tripguide.png";
 import linkedin from "./linkedin.svg";
 import contact from "./contact.svg";
 import githubi from "./githubi.svg";
+
+import moon from "./moon.png";
 export {
   logo,
   backend,
@@ -65,4 +67,5 @@ export {
   linkedin,
   contact,
   githubi,
+  moon
 };
