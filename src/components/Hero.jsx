@@ -15,9 +15,9 @@ const Hero = () => {
       name="Hero"
       className="relative h-screen w-full mx-auto">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full">
+        <div className="flex flex-col justify-center h-3/6">
           <motion.h2
-          variants={fadeIn("up",0.3)}
+          variants={fadeIn("right",0.3)}
           initial="hidden"
           whileInView={"show"}
           viewport={{once:false, amount:0.7}}
@@ -25,7 +25,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Rohan</span>
           </motion.h2>
           <motion.div
-             variants={fadeIn("up",0.6)}
+             variants={fadeIn("right",0.6)}
              initial="hidden"
              whileInView={"show"}
              viewport={{once:false, amount:0.7}}
@@ -47,27 +47,27 @@ const Hero = () => {
             />
             </motion.div>
             <motion.div
-               variants={fadeIn("up", 0.7)}
+               variants={fadeIn("right", 0.7)}
                initial="hidden"
                whileInView={"show"}
                viewport={{ once: false, amount: 0.7 }}
                className="flex items-center gap-x-5 max-w-max lg:mx-0 mt-5 mx-auto">
                <a href="https://github.com/Rohan1711" target="_blank">
-                 <FaGithub className="text-5xl hover:bg-gray-500 bg-tertiary p-3 rounded-full shadow" />
+                 <FaGithub className="text-4xl hover:bg-gray-500 bg-tertiary p-2 rounded-full shadow" />
                </a>
                <a href="https://www.linkedin.com/in/rohan-kakare-478729184" target="_blank">
-                 <FaLinkedin className="text-5xl hover:bg-blue-700 bg-tertiary p-3 rounded-full shadow" />
+                 <FaLinkedin className="text-4xl hover:bg-blue-700 bg-tertiary p-2 rounded-full shadow" />
                </a>
                <a href="mailto:rohankakare@gmail.com" target="_blank">
-                 <HiOutlineMail className="text-5xl hover:bg-sky-700 bg-tertiary p-3 rounded-full shadow" />
+                 <HiOutlineMail className="text-4xl hover:bg-sky-700 bg-tertiary p-2 rounded-full shadow" />
                </a>
                <a href="/Rohan Resume.pdf" target="_blank">
-                 <BsFillPersonLinesFill className="text-5xl hover:bg-violet-500 bg-tertiary p-3 rounded-full shadow" />
+                 <BsFillPersonLinesFill className="text-4xl hover:bg-violet-500 bg-tertiary p-2 rounded-full shadow" />
                </a>
         </motion.div>
         </div>
         <motion.div
-                variants={fadeIn("down",0.6)}
+                variants={fadeIn("left",0.5)}
                 initial="hidden"
                 whileInView={"show"}
                 className="flex-1 max=w-[320px] lg:max-w-[440px]"
