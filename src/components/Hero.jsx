@@ -9,6 +9,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 
+
 const Hero = () => {
   return (
     <div
@@ -17,7 +18,7 @@ const Hero = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-3/6">
           <motion.h2
-          variants={fadeIn("right",0.3)}
+          variants={fadeIn("down",0.5)}
           initial="hidden"
           whileInView={"show"}
           viewport={{once:false, amount:0.7}}
@@ -25,7 +26,7 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Rohan</span>
           </motion.h2>
           <motion.div
-             variants={fadeIn("right",0.6)}
+             variants={fadeIn("down",0.6)}
              initial="hidden"
              whileInView={"show"}
              viewport={{once:false, amount:0.7}}
@@ -47,7 +48,7 @@ const Hero = () => {
             />
             </motion.div>
             <motion.div
-               variants={fadeIn("right", 0.7)}
+               variants={fadeIn("down", 0.7)}
                initial="hidden"
                whileInView={"show"}
                viewport={{ once: false, amount: 0.7 }}
@@ -67,7 +68,7 @@ const Hero = () => {
         </motion.div>
         </div>
         <motion.div
-                variants={fadeIn("left",0.5)}
+                variants={fadeIn("up",0.5)}
                 initial="hidden"
                 whileInView={"show"}
                 className="flex-1 max=w-[320px] lg:max-w-[440px]"
