@@ -62,7 +62,7 @@ const Hero = () => {
                <a href="mailto:rohankakare@gmail.com" target="_blank">
                  <HiOutlineMail className="text-4xl hover:bg-sky-700 bg-tertiary p-2 rounded-full shadow" />
                </a>
-               <a href="/Rohan Resume.pdf" target="_blank">
+               <a href="/Rohan Kakare Resume.pdf" target="_blank">
                  <BsFillPersonLinesFill className="text-4xl hover:bg-violet-500 bg-tertiary p-2 rounded-full shadow" />
                </a>
         </motion.div>
