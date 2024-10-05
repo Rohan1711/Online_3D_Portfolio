@@ -67,7 +67,7 @@ export const links = [
   {
     id: 4,
     text: "Resume",
-    href: "/Rohan Resume.pdf",
+    href: "/Rohan Kakare Resume.pdf",
     style: "rounded-tr-md mt-4", // Style for the list item
     download: true, // Indicates if the link should be downloadable
   },
@@ -162,11 +162,11 @@ const experiences = [
     ],
   },
   {
-    title: "Associate KPO",
-    company_name: "Atos",
+    title: "Senior Associate",
+    company_name: "Eviden-Atos",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "March 2022 - Present",
+    date: "March 2022 - October 2024",
     points: [
       "Skilled professional in US Healthcare(operation). experienced in various aspect of US healthcare payment posting AR (Accounts receivable), claims adjudication.",
       "Analyzing claims,editing and finalizing the claims with quality and accuracy within time duration.",
