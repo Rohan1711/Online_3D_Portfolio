@@ -67,7 +67,7 @@ export const links = [
   {
     id: 4,
     text: "Resume",
-    href: "/Rohan Kakare Resume.pdf",
+    href: "/Rohan Kakare CV.pdf",
     style: "rounded-tr-md mt-4", // Style for the list item
     download: true, // Indicates if the link should be downloadable
   },
