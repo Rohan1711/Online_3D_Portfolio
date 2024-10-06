@@ -168,10 +168,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "March 2022 - October 2024",
     points: [
-      "Skilled professional in US Healthcare(operation). experienced in various aspect of US healthcare payment posting AR (Accounts receivable), claims adjudication.",
-      "Analyzing claims,editing and finalizing the claims with quality and accuracy within time duration.",
-      "Utilizing Humana's claim processing system and other relevent software tools to update and manage claim status and documentation.",
-      "Conducted Internal audits to ensure compilance with US health insurance portability and accountablity act (HIPPA) regulations.",
+      "Provided technical support to end-users, resolving hardware, software, and network-related issues.",
+      "Troubleshot and diagnosed system performance issues on desktops, laptops, and mobile devices.",
+      "Supported the setup, configuration, and troubleshooting of networking equipment ( routers, switches, VPNs).",
+      "Collaborated with cross-functional teams to address recurring issues and improve system performance.",
     ],
   },
 ];
